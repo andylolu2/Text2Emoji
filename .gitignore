@@ -1,5 +1,6 @@
 venv
+.vscode
+
 data/**
-**/.vscode
 **/__pycache__
 *.pyc
