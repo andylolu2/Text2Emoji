@@ -1,7 +1,7 @@
 from sentence_transformers import SentenceTransformer
 import numpy as np
 
-model = SentenceTransformer('paraphrase-distilroberta-base-v1')
+model = SentenceTransformer('stsb-distilbert-base')
 
 #Our sentences we like to encode
 sentences = [
