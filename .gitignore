@@ -1,6 +1,9 @@
+# local development files
 venv
 .vscode
-
-data/**
 **/__pycache__
 *.pyc
+
+# data files (View README.md for data sources)
+data
+processed_data

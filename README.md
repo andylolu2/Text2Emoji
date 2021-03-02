@@ -2,9 +2,14 @@
 
 ## Datasets
 
-- [emoji dictionary](https://www.kaggle.com/eliasdabbas/emoji-data-descriptions-codepoints)
+- [Emoji dictionary](https://www.kaggle.com/eliasdabbas/emoji-data-descriptions-codepoints)
 
 - [Reddit dataset](https://www.kaggle.com/reddit/reddit-comments-may-2015)
+    - Number of entries: 54,504,410
+
+## Links
+
+- [Model](https://huggingface.co/sentence-transformers/distilbert-base-nli-stsb-mean-tokens)
 
 ## Workflow
 
