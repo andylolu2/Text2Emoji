@@ -1,5 +1,7 @@
 # Building a text to emoji sequence translator
 
+## ***This project is in progress***
+
 ## Datasets
 
 - [Emoji dictionary](https://www.kaggle.com/eliasdabbas/emoji-data-descriptions-codepoints)
