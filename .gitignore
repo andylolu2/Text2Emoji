@@ -1,8 +1,13 @@
 # local development files
 venv
-.vscode
+.venv
+*.vscode
 **/__pycache__
 *.pyc
+
+# byte files
+models
+logs
 
 # data files (View README.md for data sources)
 data
