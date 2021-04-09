@@ -1,10 +1,12 @@
 class BaseConfig():
+    PROJECT_ROOT = "/home/andylo/Projects/Text2Emoji"
     DISTILBERT_ONNX_PATH = "models/onnx/distilbert/model.onnx"
     SENTENCE_ONNX_PATH = "models/onnx/sentence-transformer/model.onnx"
     H5DSET_PATH = "processed_data/nn_data.hdf5"
     H5DSET_TEST_PATH = "processed_data/nn_test_data.hdf5"
     EMOJI_VOCAB_PATH = "processed_data/emoji_vocab.csv"
     DISTILBERT_NAME = "distilbert-base-uncased"
+    SENTENCE_TRANSFORMER_NAME = "sentence-transformers/distilbert-base-nli-stsb-mean-tokens"
 
     def __new__(cls, *args, **kwargs):
         if cls is BaseConfig:
@@ -37,3 +39,13 @@ class TrainConfig(BaseConfig):
     BATCH_PER_LOG = 4
     REWARD_HISTORY_LEN = 10
     SHORT_EMOJI_REWARD = 1e-4
+
+
+class DreamerConfig(BaseConfig):
+    SINGLE_VOCAB_PATH = "processed_data/emoji_vocab_single.csv"
+    EPOCHS = 4000
+    EPOCH_PER_LOG = 100
+    SIGMOID_END_SHARPNESS = 1.5
+    SIGMOID_START_SHARPNESS = 1.5
+    SM_START_TEMPERATURE = 2
+    SM_END_TEMPERATURE = 0.5
