@@ -21,6 +21,12 @@ translation is inspired by the model)
 
 A few methods were tried. In the end, *[DeepDreaming on sentence transformer](#:three:<sup>rd</sup>-attempt:-DeepDreaming-on-Sentence-Transformer)* gave the best results.
 
+Main script in [text2emoji_dream/scripts/dream.py](text2emoji_dream/scripts/dream.py).
+
+```console
+(.venv) $ python -m text2emoji_dream.scripts.dream
+```
+
 [Fine-tuning](#:one:<sup>st</sup>-attempt:-Fine-tuning-DistilBert) |
 [Fine-tuning with RL](#:two:<sup>nd</sup>-attempt:-Fine-tuning-DistliBert-with-RL) |
 [DeepDream](#:three:<sup>rd</sup>-attempt:-DeepDreaming-on-Sentence-Transformer)
@@ -184,7 +190,7 @@ are transformed into a soft-max vector that is not fixed to
 0 or 1. 
 
 To ensure that the final soft-max vectors somewhat resembles 
-a one-hot vector, an annealling temperature `t` 🠒 0 is used, 
+a one-hot vector, an annealing temperature `t` 🠒 0 is used, 
 where the inputs to be optimized are divided by `t` before 
 being soft-maxed. This results to a more and more spiky 
 probability distribution as `t` 🠒 0 during training.
