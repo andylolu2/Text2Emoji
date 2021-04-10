@@ -27,9 +27,9 @@ Main script in [text2emoji_dream/scripts/dream.py](text2emoji_dream/scripts/drea
 (.venv) $ python -m text2emoji_dream.scripts.dream
 ```
 
-[Fine-tuning](#:one:<sup>st</sup>-attempt:-Fine-tuning-DistilBert) |
-[Fine-tuning with RL](#:two:<sup>nd</sup>-attempt:-Fine-tuning-DistliBert-with-RL) |
-[DeepDream](#:three:<sup>rd</sup>-attempt:-DeepDreaming-on-Sentence-Transformer)
+[Fine-tuning](#onest-attempt-fine-tuning-distilbert) |
+[Fine-tuning with RL](#twond-attempt-fine-tuning-distlibert-with-rl) |
+[DeepDream](#threerd-attempt-deepdreaming-on-sentence-transformer)
 
 Sample Results:
 
