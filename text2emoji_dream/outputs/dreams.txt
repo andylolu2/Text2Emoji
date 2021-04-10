@@ -1,0 +1,168 @@
+Input: The first time I find the Ying Wah School interesting in this context! Good photographer makes the difference!
+Output: 👣🧑ℹ️🆒🇻🇳🆚🧑‍🎓🧑🧑‍🔬🐂
+Loss: 50.879356384277344
+Len: 10
+Epochs: 100
+
+Input: The first time I find the Ying Wah School interesting in this context! Good photographer makes the difference!
+Output: 📷🔜🔙🇲🇶🇲🇾🆚ℹ️🧑🏫🥵
+Loss: 27.36531639099121
+Len: 10
+Epochs: 4000
+
+Input: I know many of you are probably feeling really anxious about Easter terms and exams right now (I know I am) , so please reach out if you need support x
+Output: 🥚🇮🇳🥺😟🏫➕🔙ℹ️🔜💓
+Loss: 27.289037704467773
+Len: 10
+Epochs: 4000
+
+Input: photoshop
+Output: 🇹🇲🚴‍♀️📷
+Loss: 66.65596008300781
+Len: 3
+Epochs: 4000
+
+Input: photoshop
+Output: 📷🧑‍🎨
+Loss: 66.59849548339844
+Len: 2
+Epochs: 4000
+
+Input: photoshop
+Output: 📷
+Loss: 117.24380493164062
+Len: 1
+Epochs: 4000
+
+Input: I am trying to install npm and nodejs, but im getting the following error. How do i fix this?
+Output: 🆑🖊️🔜😕👣👨💓🚧
+Loss: 37.97956085205078
+Len: 8
+Epochs: 4000
+
+Input: I am trying to install npm and nodejs, but im getting the following error. How do i fix this?
+Output: 😟➗🚧🔗
+Loss: 72.19384002685547
+Len: 4
+Epochs: 4000
+
+Input: There should be no boundaries to human endeavor. We are all different. However bad life may seem, there is always something you can do, and succeed at. While there's life, there is hope.
+Output: 🪞🍶🔜ℹ️🔚🏘️🥵🆚🆚🆓🚧🧥
+Loss: 49.765438079833984
+Len: 12
+Epochs: 4000
+
+Input: There should be no boundaries to human endeavor. We are all different. However bad life may seem, there is always something you can do, and succeed at. While there's life, there is hope.
+Output: 🧥🔙😟💓🆚🆚
+Loss: 51.6666145324707
+Len: 6
+Epochs: 4000
+
+Input: Only in darkness can you see the stars
+Output: 👀⌚🥸⭐🧗‍♀️
+Loss: 45.34196472167969
+Len: 5
+Epochs: 4000
+
+Input: Butterfly
+Output: 🦋
+Loss: 2.1948453650111333e-06
+Len: 1
+Epochs: 4000
+
+Input: Translate text to emojis using deep learning
+Output: ✍️⛰️ℹ️🔗🧠
+Loss: 36.59121322631836
+Len: 5
+Epochs: 4000
+
+Input: Butterflyyy
+Output: 🦋
+Loss: 46.600181579589844
+Len: 1
+Epochs: 4000
+
+Input: Programming is one of the most difficult branches of applied mathematics; the poorer mathematicians had better remain pure mathematicians.
+Output: 🚧🆓🧑😟◀️👨😩🏃‍♀️
+Loss: 42.690650939941406
+Len: 8
+Epochs: 4000
+
+Input: Programming is one of the most difficult branches of applied mathematics; the poorer mathematicians had better remain pure mathematicians.
+Output: 😟🏛️🧑🆚🔛🖱️🐕‍🦺🍙
+Loss: 22.84147071838379
+Len: 8
+Epochs: 4000
+
+Input: Programming is one of the most difficult branches of applied mathematics; the poorer mathematicians had better remain pure mathematicians.
+Output: ▶️🔛🧑‍⚕️🆚🏃‍♀️🧑🧑‍🎓🤥
+Loss: 30.310317993164062
+Len: 8
+Epochs: 4000
+
+Input: I'll join for a bit if we use like a funny map
+Output: 🔜➕🔛🦮
+Loss: 48.41840362548828
+Len: 4
+Epochs: 4000
+
+Input: You zoomed into the one part that I didn't actually draw... Did you think I could actually draw that hand at 5 years old
+Output: 😕🕐💔🔛▶️🕔🔬
+Loss: 32.684295654296875
+Len: 7
+Epochs: 4000
+
+Input: The great Barrier Reef in Australia is one the most beautiful places on Earth
+Output: 🔑🤴🇱🇨💙🇦🇺🔝🧑
+Loss: 21.897937774658203
+Len: 7
+Epochs: 4000
+
+Input: The great Barrier Reef in Australia is one the most beautiful places on Earth
+Output: ⏺️🥵🏆🇦🇺
+Loss: 28.24463653564453
+Len: 4
+Epochs: 4000
+
+Input: The caterpillar only takes 2 weeks to grwo into a butterfly
+Output: 🇱🇦🔅👪🥚🕑🦋
+Loss: 43.2255744934082
+Len: 6
+Epochs: 4000
+
+Input: Translate text to emojis using deep learning
+Output: ℹ️▶️🔛🧠
+Loss: 36.63764190673828
+Len: 4
+Epochs: 4000
+
+Input: Only in darkness can you see the stars
+Output: 💗🔅⭐🏘️🧗‍♀️
+Loss: 37.42289733886719
+Len: 5
+Epochs: 4000
+
+Input: Only in darkness can you see the stars
+Output: 👀⌚🥸⭐ℹ️
+Loss: 42.61064147949219
+Len: 5
+Epochs: 4000
+
+Input: The univerisity of cambridge is creating a Centre for Music Performance (CMP to transform the visibility, scale, ambition and reach of musical life at Cambridge.
+Output: 🧍‍♀️☀️🎸🏫➕🌰
+Loss: 44.02396774291992
+Len: 6
+Epochs: 4000
+
+Input: The caterpillar only takes 2 weeks to grow into a butterfly
+Output: 👀🆓🚇®️💓📅
+Loss: 69.90913391113281
+Len: 6
+Epochs: 4000
+
+Input: The caterpillar only takes 2 weeks to grow into a butterfly
+Output: 👀🆓🚇®️💓🥚
+Loss: 62.942588806152344
+Len: 6
+Epochs: 4000
+

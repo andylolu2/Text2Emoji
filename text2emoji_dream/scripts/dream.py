@@ -58,13 +58,17 @@ def dream(text, guess_len, device='cuda'):
     #     device=device)
 
     optimizer = torch.optim.AdamW(
-        [modifiable_oh], lr=1e-1)
+        [modifiable_oh], lr=DreamerConfig.OPTIMIZER_INIT_LR)
     loss_fn = torch.nn.MSELoss(reduction='sum')
-    scheduler = torch.optim.lr_scheduler.StepLR(
-        optimizer, step_size=2500, gamma=0.2)
+    scheduler = torch.optim.lr_scheduler.MultiStepLR(
+        optimizer,
+        milestones=DreamerConfig.SCHEDULER_MILETONES,
+        gamma=DreamerConfig.SCHEDULER_GAMMA)
     target = model(tokenized.input_ids[0].to(device),
                    tokenized.attention_mask[0].to(device), is_onehot=False)
 
+    final_ids = None
+    loss_value = None
     for i in range(DreamerConfig.EPOCHS):
         temperature = temperatures[i]
         # sharpness = sharpnesses[i]
@@ -89,9 +93,10 @@ def dream(text, guess_len, device='cuda'):
         optimizer.step()
         scheduler.step()
 
+        loss_value = loss.item()
         if i % DreamerConfig.EPOCH_PER_LOG == DreamerConfig.EPOCH_PER_LOG - 1:
             print(
-                f'step: {i} loss: {loss.item()}')
+                f'step: {i} loss: {loss_value}')
             final_ids = torch.argmax(fused_oh, dim=-1)
             # final_index = int(mask_prop * tokenizer.model_max_length) + 1
             # print(final_ids)
@@ -99,13 +104,23 @@ def dream(text, guess_len, device='cuda'):
 
             print(tokenizer.convert_ids_to_tokens(final_ids))
 
-        if i == DreamerConfig.EPOCHS - 1:
-            sentence = tokenizer.convert_ids_to_tokens(final_ids)[1:-1]
-            print(emoji_dict.sentence_to_emoji(sentence))
+    sentence = tokenizer.convert_ids_to_tokens(final_ids)[1:-1]
+    return emoji_dict.sentence_to_emoji(sentence), loss_value
 
 
 if __name__ == '__main__':
-    text = "photoshop"
-    guess_len = 2
+    text = "The caterpillar only takes 2 weeks to grow into a butterfly"
+    guess_len = 6
 
-    dream(text, guess_len)
+    emojis, loss_value = dream(text, guess_len)
+    with open(DreamerConfig.PROJECT_ROOT + DreamerConfig.OUPUT_FILE, "a") as f:
+        lines = [
+            f'Input: {text}',
+            f'Output: {"".join(emojis)}',
+            f'Loss: {loss_value}',
+            f'Len: {guess_len}',
+            f'Epochs: {DreamerConfig.EPOCHS}',
+            ''
+        ]
+        lines = [line + "\n" for line in lines]
+        f.writelines(lines)
