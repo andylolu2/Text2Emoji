@@ -1,10 +1,4 @@
 Input: The first time I find the Ying Wah School interesting in this context! Good photographer makes the difference!
-Output: 👣🧑ℹ️🆒🇻🇳🆚🧑‍🎓🧑🧑‍🔬🐂
-Loss: 50.879356384277344
-Len: 10
-Epochs: 100
-
-Input: The first time I find the Ying Wah School interesting in this context! Good photographer makes the difference!
 Output: 📷🔜🔙🇲🇶🇲🇾🆚ℹ️🧑🏫🥵
 Loss: 27.36531639099121
 Len: 10

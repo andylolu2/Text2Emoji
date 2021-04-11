@@ -2,7 +2,7 @@
 
 ## Problem
 
-I wanted to build a model that can represent a sentence in emojis only. 
+I wanted to build a model that can text to emojis. 
 
 For example, 
 
@@ -153,7 +153,7 @@ lies in.
 
 ### :three:<sup>rd</sup> attempt: DeepDreaming on Sentence Transformer
 
-Uses: [Pretrained Sentence Transformer](https://huggingface.co/sentence-transformers/distilbert-base-nli-stsb-mean-tokens),
+Uses: [Pretrained Sentence Transformer](https://huggingface.co/sentence-transformers/distilbert-base-nli-stsb-mean-tokens)
 
 #### Method
 
