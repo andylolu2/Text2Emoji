@@ -2,7 +2,7 @@
 
 ## Problem
 
-I wanted to build a model that can text to emojis. 
+I wanted to build a model that can translate text to emojis. 
 
 For example, 
 
